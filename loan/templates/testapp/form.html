@@ -1,0 +1,425 @@
+{%load staticfiles%}
+{%load crispy_forms_tags%}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>LOAN -Money for loan</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/static/images/apple-touch-icon.png">
+
+    <!-- Stylesheet -->
+
+    <link rel="stylesheet"  href="{% static "css/style.css"%}">
+    <link rel="stylesheet"  href="{% static "css/animate.css"%}">
+    <link rel="stylesheet"  href="{% static "css/bootstrap.min.css"%}">
+    <link rel="stylesheet"  href="{% static "css/classy-nav.css"%}">
+    <link rel="stylesheet"  href="{% static "css/credit-icon.css"%}">
+    <link rel="stylesheet"  href="{% static "css/font-awesome.min.css"%}">
+    <link rel="stylesheet"  href="{% static "css/owl.carousel.min.css"%}">
+    <link rel="stylesheet"  href="{% static "css/style.css.map"%}">
+
+</head>
+
+<body style="background-image: url(/static/images/br.jpg); background-size:cover; background-repeat:no-repeat;">
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 d-flex justify-content-between">
+                        <!-- Logo Area -->
+                        <div class="logo">
+                            <a href="index.html"><img src="/static/images/m.png" style="height: 80px"; alt=" "></a>
+                        </div>
+
+                        <!-- Top Contact Info -->
+                        <div class="top-contact-info d-flex align-items-center">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="25 th Street Avenue, Los Angeles, CA"><img src="/static/images/placeholder.png" alt=""> <span>Hyderabad Ameerpet Flot No:3-42/2-3/1m1</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="office@yourfirm.com"><img src="/static/images/message.png" alt=""> <span>manush@mloan.com</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="credit-main-menu" id="sticker"  >
+            <div class="classy-nav-container breakpoint-off"style="background:green";>
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="creditNav" style="background:green";>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler" >
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="/about">About Us</a></li>
+                                            <li><a href="/services">Services</a></li>
+                                            <li><a href="/post">Post</a></li>
+                                            <!-- <li><a href="single-post.html">Single Post</a></li> -->
+                                            <li><a href="/contact">Contact</a></li>
+                                            <!-- <li><a href="elements.html">Elements</a></li> -->
+                                        </ul>
+                                    </li>
+                                    <li><a href="/services">Services</a></li>
+
+                                    <li><a href="/post">Blog</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="contact">
+                            <a href="#"><img src="/static/images/call2.png" alt=""><span style="color:green";>+919248311693&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+
+</br></br>
+
+    <div class="container" style="width:700px; ">
+    <form method="POST" enctype="multipart/form-data">
+    <h1>FILL UP THIS FORM TO GET LOAN </h1>
+    <h5 style="text-align:center;">*Fill up the below form for getting loan in 1 hour</h5>
+    <h3 style="text-align:center; color:blue;">(Only For Employees)</h3>
+  </br>
+    {%csrf_token%}
+    {{profile_form|crispy}}
+  </br>
+    <button type="submit" class='btn btn-lg btn-success' style="margin-left:300px;">submit</button>
+    </form>
+  </div>
+
+</br></br>
+
+<h4 style="text-align:center; color:blueviolet;">(OR)</h4></br>
+<h4 style="text-align:center; color:blueviolet;">Send the documents through mail to rng@mloan.com</h4>
+
+
+</br>
+
+
+    <!-- ##### Miscellaneous Area Start ###### -->
+    <section class="miscellaneous-area bg-gray section-padding-100-0">
+        <div class="container" >
+            <div class="row align-items-end justify-content-center">
+                <!-- Add Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="add-area mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <a href="#"><img src="/static/images/add.png" alt=""></a>
+                    </div>
+                </div>
+
+                <!-- Contact Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="contact--area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Section Heading -->
+                        <div class="section-heading mb-50">
+                            <div class="line"></div>
+                            <h2>Get in touch</h2>
+                        </div>
+                        <!-- Contact Content -->
+                        <div class="contact-content">
+                            <!-- Single Contact Content -->
+                            <div class="single-contact-content d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="/static/images/location.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Hyderabad Ameerpet<br>Flot No:3-42/2-3/1m1</p>
+                                </div>
+                            </div>
+                            <!-- Single Contact Content -->
+                            <div class="single-contact-content d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="/static/images/call.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>+919248311693</p>
+                                    <span>mon-fri , 09.am - 08.pm</span>
+                                </div>
+                            </div>
+                            <!-- Single Contact Content -->
+                            <div class="single-contact-content d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="/static/images/message2.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>rngloan.com</p>
+                                    <span>we reply in 24 hrs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="news--area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Section Heading -->
+                        <div class="section-heading mb-50">
+                            <div class="line"></div>
+                            <h2>The news</h2>
+                        </div>
+
+                        <!-- Single News Area -->
+                        <div class="single-news-area d-flex align-items-center">
+                            <div class="news-thumbnail">
+                                <img src="/static/images/10.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <span>July 18, 2018</span>
+                                <a href="#">How to get the best loan online</a>
+                                <div class="news-meta">
+                                    <a href="#" class="post-author"><img src="img/core-img/pencil.png" alt=""> Jane Smith</a>
+                                    <a href="#" class="post-date"><img src="img/core-img/calendar.png" alt=""> April 26</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single News Area -->
+                        <div class="single-news-area d-flex align-items-center">
+                            <div class="news-thumbnail">
+                                <img src="/static/images/11.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <span>July 18, 2018</span>
+                                <a href="#">A new way to finance your dream home</a>
+                                <div class="news-meta">
+                                    <a href="#" class="post-author"><img src="img/core-img/pencil.png" alt=""> Jane Smith</a>
+                                    <a href="#" class="post-date"><img src="img/core-img/calendar.png" alt=""> April 26</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single News Area -->
+                        <div class="single-news-area d-flex align-items-center">
+                            <div class="news-thumbnail">
+                                <img src="/static/images/12.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <span>July 18, 2018</span>
+                                <a href="#">10 tips to get the best loan for you</a>
+                                <div class="news-meta">
+                                    <a href="#" class="post-author"><img src="/static/images/pencil.png" alt=""> Jane Smith</a>
+                                    <a href="#" class="post-date"><img src="/static/images/calendar.png" alt=""> April 26</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Miscellaneous Area End ###### -->
+
+    <!-- ##### Newsletter Area Start ###### -->
+    <section class="newsletter-area section-padding-100 bg-img jarallax" style="background-image: url(/static/images/6.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="nl-content text-center">
+                        <h2>Subscribe to our newsletter</h2>
+                        <form action="#" method="post">
+                            <input type="email" name="nl-email" id="nlemail" placeholder="Your e-mail">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <p>Curabitur elit turpis, maximus quis ullamcorper sed, maximus eu neque. Cras ultrices erat nec auctor blandit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Newsletter Area End ###### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-100">
+                        <h5 class="widget-title">About Us</h5>
+                        <!-- Nav -->
+                        <nav>
+                            <ul>
+                                <li><a href="#">Homepage</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Services &amp; Offers</a></li>
+                                <li><a href="#">Portfolio Presentation</a></li>
+                                <li><a href="#">The News</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-100">
+                        <h5 class="widget-title">Solutions</h5>
+                        <!-- Nav -->
+                        <nav>
+                            <ul>
+                                <li><a href="#">Our Loans</a></li>
+                                <li><a href="#">Trading &amp; Commerce</a></li>
+                                <li><a href="#">Banking &amp; Private Equity</a></li>
+                                <li><a href="#">Industrial &amp; Factory</a></li>
+                                <li><a href="#">Financial Solutions</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-100">
+                        <h5 class="widget-title">Our Loans</h5>
+                        <!-- Nav -->
+                        <nav>
+                            <ul>
+                                <li><a href="#">Our Loans</a></li>
+                                <li><a href="#">Trading &amp; Commerce</a></li>
+                                <li><a href="#">Banking &amp; Private Equity</a></li>
+                                <li><a href="#">Industrial &amp; Factory</a></li>
+                                <li><a href="#">Financial Solutions</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-100">
+                        <h5 class="widget-title">Latest News</h5>
+
+                        <!-- Single News Area -->
+                        <div class="single-latest-news-area d-flex align-items-center">
+                            <div class="news-thumbnail">
+                                <img src="/static/images/7.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <a href="#">How to get the best loan?</a>
+                                <div class="news-meta">
+                                    <a href="#" class="post-author"><img src="/static/images/pencil.png" alt=""> Jane Smith</a>
+                                    <a href="#" class="post-date"><img src="/static/images/calendar.png" alt=""> April 26</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single News Area -->
+                        <div class="single-latest-news-area d-flex align-items-center">
+                            <div class="news-thumbnail">
+                                <img src="/static/images/8.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <a href="#">A new way to get a loan</a>
+                                <div class="news-meta">
+                                    <a href="#" class="post-author"><img src="/static/images/core-img/pencil.png" alt=""> Jane Smith</a>
+                                    <a href="#" class="post-date"><img src="/static/images/calendar.png" alt=""> April 26</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single News Area -->
+                        <div class="single-latest-news-area d-flex align-items-center">
+                            <div class="news-thumbnail">
+                                <img src="/static/images/9.jpg" alt="">
+                            </div>
+                            <div class="news-content">
+                                <a href="#">Finance you home</a>
+                                <div class="news-meta">
+                                    <a href="#" class="post-author"><img src="/static/images/pencil.png" alt=""> Jane Smith</a>
+                                    <a href="#" class="post-date"><img src="/static/images//calendar.png" alt=""> April 26</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="copywrite-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copywrite-content d-flex flex-wrap justify-content-between align-items-center">
+                            <!-- Footer Logo -->
+                            <a href="index.html" class="footer-logo"><img src="/static/images/logo.png" alt=""></a>
+
+                            <!-- Copywrite Text -->
+                            <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="/static/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="/static/js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="/static/js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="/static/js/active.js"></script>
+</body>
+
+</html>

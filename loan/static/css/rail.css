@@ -1,0 +1,1311 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+form,
+nav,
+ul,
+ol,
+li,
+a {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+    color: #38b7e5;
+}
+a:hover {
+    text-decoration: none;
+}
+.padTB {
+    padding: 10px 0;
+}
+.tCenter {
+    text-align: center;
+}
+.tRight {
+    text-align: right;
+}
+.pTB50 {
+    padding: 50px 0;
+	background-color:#f8f8f8;
+}
+.bdr {
+    border: solid 1px #DCDCDC;
+}
+.mTop {
+    margin-top: 10px;
+}
+a img {
+    border: none;
+}
+.mLeft {
+    margin-right: 10px;
+}
+.fLeft {
+    float: left;
+}
+.pLeft {
+    padding-left: 20px;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff2') format('woff2'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mondaregular';
+    src: url('../fonts/Monda-Regular_0-webfont.eot');
+    src: url('../fonts/Monda-Regular_0-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Monda-Regular_0-webfont.woff2') format('woff2'), url('../fonts/Monda-Regular_0-webfont.woff') format('woff'), url('../fonts/Monda-Regular_0-webfont.ttf') format('truetype'), url('Monda-Regular_0-webfont.svg#mondaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.outerDiv {
+    float: left;
+    width: 100%;
+	background-color: #f8f8f8;
+}
+.row {
+    width: 100%;
+    float: left;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    float: left;
+}
+.col-12 {
+    width: 100%;
+}
+.col-11 {
+    width: 91.66666667%;
+}
+.col-10 {
+    width: 83.33333333%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.66666667%;
+}
+.col-7 {
+    width: 58.33333333%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66666667%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: 16.66666667%;
+}
+.col-1 {
+    width: 8.33333333%;
+}
+/* All Headings css starts here */
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #008300;
+}
+h2 {
+    font-family: 'Roboto';
+    font-weight: bold;
+	color:#720e87;
+}
+h3 {
+    font-family: 'Roboto';
+	color: #720e87;
+	line-height: 35px;
+}
+h5 {
+    font-size: 17px;
+    font-weight: normal;
+    color: #797979;
+}
+/* All Gradient css starts here */
+
+.grayG {
+    background: #ffffff;
+	border-bottom: 4px solid #720e87;
+    background: -moz-linear-gradient(top, #ffffff 21%, #ffffff 97%, #ffffff 97%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(21%, #ffffff), color-stop(97%, #efefef), color-stop(97%, #efefef));
+    background: -webkit-linear-gradient(top, #ffffff 21%, #ffffff 97%, #ffffff 97%);
+    background: -o-linear-gradient(top, #ffffff 21%, #ffffff 97%, #ffffff 97%);
+    background: -ms-linear-gradient(top, #ffffff 21%, #ffffff 97%, #ffffff 97%);
+    background: linear-gradient(to bottom, #ffffff 21%, #ffffff 97%, #ffffff 97%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff ', GradientType=0);
+}
+.orangeBtn {
+    border:none;
+    background: #ff8d00;
+    /* Old browsers */
+
+    background: -moz-linear-gradient(top, #ff8d00 0%, #ff2900 100%);
+    /* FF3.6+ */
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff8d00), color-stop(100%, #ff2900));
+    /* Chrome,Safari4+ */
+
+    background: -webkit-linear-gradient(top, #ff8d00 0%, #ff2900 100%);
+    /* Chrome10+,Safari5.1+ */
+
+    background: -o-linear-gradient(top, #ff8d00 0%, #ff2900 100%);
+    /* Opera 11.10+ */
+
+    background: -ms-linear-gradient(top, #ff8d00 0%, #ff2900 100%);
+    /* IE10+ */
+
+    background: linear-gradient(to bottom, #ff8d00 0%, #ff2900 100%);
+    /* W3C */
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff8d00', endColorstr='#ff2900', GradientType=0);
+    /* IE6-9 */
+}
+.blueBtn {
+    background: #2ac0f6;
+    /* Old browsers */
+
+    background: -moz-linear-gradient(top, #2ac0f6 0%, #00afef 100%);
+    /* FF3.6+ */
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2ac0f6), color-stop(100%, #00afef));
+    /* Chrome,Safari4+ */
+
+    background: -webkit-linear-gradient(top, #2ac0f6 0%, #00afef 100%);
+    /* Chrome10+,Safari5.1+ */
+
+    background: -o-linear-gradient(top, #2ac0f6 0%, #00afef 100%);
+    /* Opera 11.10+ */
+
+    background: -ms-linear-gradient(top, #2ac0f6 0%, #00afef 100%);
+    /* IE10+ */
+
+    background: linear-gradient(to bottom, #2ac0f6 0%, #00afef 100%);
+    /* W3C */
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2ac0f6', endColorstr='#00afef', GradientType=0);
+    /* IE6-9 */
+}
+.bdrRadius {
+    border-radius: 6px;
+}
+.txtBlkShow {
+    text-shadow: 1px 0px 1px #000000;
+}
+.normalBtn {
+    float: right;
+    background: #37b2dc;
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -ms-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+}
+.normalBtn:hover {
+    text-decoration: none;
+    background: #2c9ec5;
+}
+/* HeaderPart starts here */
+
+.headerpart {
+    float: left;
+    width: 100%;
+}
+.nav {
+    float: left;
+}
+.nav ul {
+    float: right;
+}
+.nav ul li {
+    float: left;
+    line-height: 70px;
+}
+.nav ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+.nav ul li a:hover,
+.nav ul li a.active {
+    color: #008300;
+}
+.nav ul li a.loginBtn {
+    padding: 7px 20px;
+    color: #000;
+    border: solid 1px #13abe2;
+    box-shadow: inset 1px 1px 0px 0px #79d7f9;
+}
+/* frontArea Part starts here */
+
+.frontbg {
+    background: url("../images/frontbg.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+    height: 662px;
+    position: relative;
+	border-top: 4px solid #018201;
+    border-bottom: 4px solid #018201;
+ /*   width: 105%;*/
+}
+.frontArea {
+    width: 100%;
+    height: 661px;
+}
+.topHeading {
+    padding: 30px 0;
+}
+.topHeading h1,
+.topHeading h5 {
+    color: #fff;
+}
+.topHeading h1 {
+    font-size: 30px;
+}
+.topHeading h5 {
+    font-size: 18px;
+	line-height: 35px;
+}
+.topHeading .callUs {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+.topHeading .callUs span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+.loanCalcBox {
+    width: 100%;
+    height: 440px;
+    float: left;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: solid 12px rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, 0.3);
+}
+.sliderBox {
+      padding: 25px 20px;
+}
+.sliderBox h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+	line-height: 35px;
+}
+.repayDate {
+    color: #cecece;
+    font-size: 13px;
+    left: 82px;
+	position:relative;
+}
+.totalRepayAmt {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+    color: #fff;
+    float: left;
+    font-family: "mondaregular";
+    font-size: 16px;
+    height: 100px;
+  /*  left: 15px;*/
+    position: relative;
+    top: 22px;
+    width: 100%;
+}
+.totalRepayAmt1{
+    color: #fff;
+    float: left;
+    font-family: "mondaregular";
+    font-size: 16px;
+    height: 100px;
+    left: 15px;
+    position: relative;
+    top: 0px;
+    width: 97.2%;
+}
+.amtbox {
+    width: 170px;
+    float: left;
+    text-align: left;
+    font-size: 23px;
+    padding-top: 10px;
+}
+.amtbox span {
+    font-size: 16px;
+}
+.plusIsqualSign {
+
+	width: 60px;
+    float: left;
+    text-align: left;
+    font-size: 40px;
+    padding-top: 10px;
+}
+.applyNowbtn {
+	border-radius: 5px;
+    width: 305px;
+    height: 58px;
+    float: right;
+    line-height: 58px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'mondaregular';
+    font-size: 20px;
+    margin-top: 17px;
+    margin-right: 17px;
+}
+.actualAmtInfo {
+    font-size: 13px;
+    color: #cecece;
+    text-align: right;
+    top: 40px;
+    float: right;
+	position:relative;
+}
+.representativeExp {
+    color: #fff;
+    font-size: 12px;
+    float: left;
+    top: 25px;
+    width: 55%;
+    line-height: 20px;
+	position:relative;
+}
+.representativeExp h4 {
+    font-size: 16px;
+    text-decoration: underline;
+    line-height: 25px;
+}
+/* Why Choose part starts here */
+
+.whyChoose {} .wChooseBox {
+    width: auto;
+    padding: 20px 40px 30px 40px;
+    margin: 0 10px;
+	background-color:#FFF;
+}
+.wChooseBox img {
+    margin-bottom: 15px;
+}
+.wChooseBox.bdr:hover {
+    border: solid 1px #dedcdc;
+    background: #F7FCFF;
+}
+/*Borrowig tips part starts here */
+
+.tenTipsBg {
+    background-color: #454545;
+    border-top: 3px solid #038703;
+    border-bottom: 3px solid #038703;
+}
+.borrowTips {} .borrowTips h1 {
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 10px;
+	font-family: 'Roboto', Calibri;
+}
+.borrowTips h2 {
+    color: #FFBE5F;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+.borrowTips h5 {
+    color: #fff;
+    font-size: 18px;
+}
+.borrowTips .col-7.padLeft {
+       padding-left: 115px;
+       width: 66%;
+}
+.feelingPinch {
+        background: url(../images/feeling-pinch.jpg) no-repeat;
+    padding-right: 10px;
+    padding-left: 20px;
+    border-radius: 5px;
+    padding-bottom: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+    border: #CCC solid 3px;
+}
+.feelingPinch h2 {
+    margin-top: 30px;
+    color: #000;
+}
+/*about and client speak part starts here */
+
+.aboutRupeeLend {
+        font-size: 16px;
+    padding-right: 55px;
+    text-align: justify;
+    line-height: 26px;
+    width: 45%;
+    font-family: 'Roboto', Calibri;
+}
+.testimonials {} .userImg {
+    width: 103px;
+    float: left;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+.userImg img {
+    border: solid 1px #fff;
+}
+.userImg p {
+    color: #37b2dc;
+    font-size: 15px;
+    line-height: 18px;
+}
+.userImg p span {
+    color: #bcbcbc;
+    font-size: 13px;
+    display: block;
+}
+.testimonials blockquote {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    line-height: 23px;
+}
+.testimonials h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+/*Start and Apply part starts here */
+
+.startApplyBg {
+    background: url(../images/start-and-apply-bg.jpg) top center no-repeat;
+}
+.startApplyBg h2 {
+    font-size: 30px;
+    color: #fff;
+}
+.applybtn {
+    padding: 7px 10px;
+    width: 280px;
+    line-height: 45px;
+    float: left;
+    text-align: center;
+    font-family: 'mondaregular';
+    font-weight: bold;
+    color: #fff;
+    font-size: 21px;
+    border: 1px solid #ff6400;
+    box-shadow: #000 0px 1px 1px 0px;
+}
+
+.applybtn1 {
+    padding: 7px 10px;
+    width: 280px;
+    line-height: 45px;
+    float: left;
+    text-align: center;
+    font-family: 'mondaregular';
+    font-weight: bold;
+    color: #fff;
+    font-size: 21px;
+    border: 1px solid #ff6400;
+    box-shadow: #000 0px 1px 1px 0px;
+	position: relative;
+	left: 100px;
+	top: 30px;
+}
+
+.applybtn:hover {
+    border: solid 1px #fff;
+}
+/*footer part starts here*/
+
+.footerPart {
+    background: #F8F8F8;
+}
+.footerLinks {
+    color: #7e7e7e;
+}
+.footerLinks a {
+    font-size: 17px;
+    color: #7e7e7e;
+    padding: 0 5px;
+}
+.footerLinks a:hover {
+    color: #37b2dc;
+    text-decoration: underline;
+}
+.tncApply {
+    color: #7e7e7e;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    border-top: solid 1px #dbdbdb;
+    padding-top: 10px;
+    margin-top: 10px;
+    float: left;
+    clear: left;
+}
+.phNo {
+    color: #37b2dc;
+    font-size: 27px;
+    font-weight: bold;
+}
+.bdrLeft {
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+    width: 20%;
+}
+
+/*New Css*/
+.plus_symbol{
+    float: left;
+    left: 75px;
+    position: relative;
+    top: 10px;
+}
+.minus_symbol{
+    left: 5px;
+    position: relative;
+    top: 10px;
+}
+.slideBox_New{
+    background: none repeat scroll 0 0 #948561;
+    height: 63px;
+    overflow: auto;
+    position: relative;
+    width: 95%;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.loan_price{
+    background: none repeat scroll 0 0 #4e8289;
+    border: 3px solid #8b785a;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    left: -3px;
+    padding: 3px;
+    position: relative;
+    text-align: center;
+    top: 12px;
+    width: 130px;
+
+}
+.rupee_symbol{
+    position: relative;
+    text-align: center;
+    top: 1px;
+}
+.repayDateMain{
+position:relative;
+float:left;
+}
+.plusDays{
+    float: left;
+    left: 75px;
+    position: relative;
+    top: 10px;
+}
+.slideBox_New1{
+    background: none repeat scroll 0 0 #948561;
+    height: 63px;
+    overflow: auto;
+    position: relative;
+    width: 95%;
+	border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.minusDays{
+position:relative;
+top:10px;
+left:5px;
+}
+.loan_days{
+    background: none repeat scroll 0 0 #4e8289;
+    border: 3px solid #8b785a;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    left: -3px;
+    padding: 3px;
+    position: relative;
+    text-align: center;
+    top: 12px;
+    width: 130px;
+}
+.repayDateFixed{
+    color: #cecece;
+    font-size: 13px;
+    left: 75px;
+    position: relative;
+}
+.loanDays{
+    left: -33px;
+    position: relative;
+}
+.loanDaysInput{
+position: absolute;
+}
+.inputDaysValue{
+    background-color: #4e8289;
+    border: medium none;
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+    left: -20px;
+    position: absolute;
+    top: -1px;
+    width: 58px;
+}
+.inputAmountValue{
+    background-color: #4e8289;
+    border: medium none;
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+    left: 20px;
+    position: relative;
+    top: -1px;
+    width: 58px;
+}
+/*personal Page */
+.personalHeadingPage{
+    background: url("../images/personal.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #fff;
+    height: 65px;
+    position: relative;
+	top: 14px;
+}
+.personal_details_heading{
+    padding: 0 60px;
+    position: relative;
+}
+.applyToBorrow{
+    color: #19b8f0;
+    float: left;
+    font-size: 21px;
+    position: relative;
+}
+.newBorrowing{
+    color: #000;
+    float: left;
+    left: -270px;
+    padding: 20px 0;
+    position: relative;
+}
+.plusIsqualSign1{
+  float: left;
+  font-size: 40px;
+  left: -2px;
+  position: relative;
+  text-align: left;
+  width: 60px;
+  top: 10px;
+}
+.plusIsqualSign2{
+    float: left;
+    font-size: 40px;
+    left: -102px;
+    position: relative;
+    text-align: left;
+    width: 60px;
+    top:10px;
+}
+.amtbox1{
+    float: left;
+    font-size: 18px;
+    left: -50px;
+    padding-top: 15px;
+    position: relative;
+    text-align: left;
+    width: 160px;
+}
+.amtbox2{
+    float: left;
+    font-size: 18px;
+    left: -130px;
+    padding-top: 15px;
+    position: relative;
+    text-align: left;
+    width: 190px;
+}
+.borrow_content{
+    float: right;
+    padding: 0 50px;
+    position: relative;
+    top: -90px;
+}
+.BorrowedAmount{
+    border: medium none;
+    font-size: 17px;
+    width: 60%;
+}
+.InterestAmount{
+    border: medium none;
+    font-size: 17px;
+    width: 60%;
+}
+.TotalRepayAmount{
+    border: medium none;
+    font-size: 17px;
+    width: 60%;
+}
+.personalPage_details{
+    background: none repeat scroll 0 0 #F7F7F7;
+    padding: 10px 20px;
+    position: relative;
+	color:#1BB7F0;
+	border-bottom:1px solid #DCDCDC;
+}
+.personalPage_detailsTable{
+    left: -20px;
+    position: relative;
+}
+.firstTableData{
+    border: 1px solid #e4e4e4;
+    left: 60px;
+    position: relative;
+    width: 90%;
+}
+.firstTableDataContent{
+    border: 1px solid #DCDCDC;
+    position: relative;
+    width: 100%;
+	background-color: #FFF;
+
+}
+.google-map3{
+width:650px;
+height:400px;
+}
+.firstTableData1{
+    border: 1px solid #e4e4e4;
+    left: 60px;
+    position: relative;
+    width: 90%;
+
+}
+.employeePage_details{
+    background: none repeat scroll 0 0 #F7F7F7;
+    padding: 10px 20px;
+    position: relative;
+	color:#1BB7F0;
+}
+.employeePage_detailsTable{
+    left: -20px;
+    position: relative;
+	display:block;
+}
+
+.selectEmpSts{
+position:relative;
+left:-20px;
+width: 41% !important;
+}
+.selectEmpMonthly{
+position:relative;
+left:-20px;
+ width: 41% !important;
+}
+.nextIncomeDate{
+position:relative;
+left:-50px;
+width: 45% !important;
+}
+.selectNextIncome{
+position:relative;
+left:-40px;
+width: 50% !important;
+}
+.FrqIncome{
+position:relative;
+left:-50px;
+width: 45% !important;
+}
+.selectFrqIncome{
+position:relative;
+left:-40px;
+width: 50% !important;
+}
+.EasyAndTranspt{
+    background: none repeat scroll 0 0 #e4e4e4;
+    border-radius: 4px;
+    padding: 5px;
+}
+.LoansThatYou{
+    background: none repeat scroll 0 0 #F5F5F5;
+    padding: 5px 15px;
+}
+.firstTableData3{
+    border: 1px solid #e4e4e4;
+    left: 60px;
+    position: relative;
+    width: 90%;
+
+}
+.contactPage_details{
+    background: none repeat scroll 0 0 #F7F7F7;
+    padding: 10px 20px;
+    position: relative;
+	color:#1BB7F0;
+}
+.contactPage_detailsTable{
+    left: -20px;
+    position: relative;
+	display:block;
+}
+.radioButtonContactPAge{
+    left: 40px;
+    padding: 10px;
+    position: relative;
+    width: 150%;
+}
+.inputRadioButton{
+    float: right;
+    position: relative;
+    right: -100px;
+    top: -20px;
+
+}
+.checkboxTermsandConditions{
+    padding: 0 60px;
+    position: relative;
+
+}
+.applyFormdata{
+    float: right;
+    margin-bottom: 36px;
+    position: relative;
+    right: 80px;
+    top: 2px;
+}
+.ByClickNetx{
+    font-family: OpenSans-Regular-webfont italic;
+    font-size: 12px;
+    padding: 0 20px;
+    position: relative;
+    top: -45px;
+}
+
+/*Success page*/
+.success-data{
+    padding: 10px 20px;
+    position: relative;
+}
+/*about us*/
+.aboutUsContent{
+ position:relative;
+ padding:0px 20px;
+text-align:justify;
+}
+/*How it works*/
+.howItHowrks{
+position:relative;
+padding:20px 20px;
+}
+
+/*Rates and terms*/
+.RatesAndterms{
+position:relative;
+padding:20px 20px;
+}
+/* Contact US*/
+.two_third{
+position:relative;
+width:100%;
+}
+.one_third {
+    float: left;
+    position: relative;
+}
+.last{
+    clear: right;
+    margin-right: 0 !important;
+}
+.firstTableDataContactUs{
+    border: 1px solid #DCDCDC;
+    left: 60px;
+    position: relative;
+    width: 60%;
+	background-color:#FFF;
+}
+.firstTableDataContactUsAddress{
+    border: 1px solid #DCDCDC;
+    float: right;
+    position: absolute;
+    right: 50px;
+    top: 130px;
+    width: 30%;
+	background-color:#FFF;
+}
+/*
+.locationMap{
+position:relative;
+float:right;
+width:100px;
+
+}*/
+/*About us page*/
+.aboutUsFirstHeading{
+}
+.aboutUsImage{
+float:left
+}
+.aboutUsText{
+    float: right;
+    position: relative;
+    text-align: justify;
+    top: -5px;
+    width: 65%;
+}
+.aboutUsFirstHeading1{
+     padding: 210px 0;
+}
+.aboutUsImage1{
+float:left;
+}
+.aboutUsText1{
+    float: right;
+    position: relative;
+    text-align: justify;
+    top: -5px;
+    width: 65%;
+}
+.aboutUsFirstHeading2{
+padding: 20px 0;
+
+}
+.aboutUsImage2{
+float:left
+}
+.aboutUsText2{
+    float: right;
+    position: relative;
+    text-align: justify;
+    top: -5px;
+    width: 65%;
+}
+.aboutUsFirstHeading3{
+ padding: 260px 0;
+}
+.aboutUsImage3{
+float:left;
+}
+.aboutUsText3{
+    float: right;
+    text-align: justify;
+    width: 65%;
+}
+.aboutUsFirstHeading4{
+ padding: 30px 0;
+}
+.aboutUsImage4{
+float:left;
+}
+.aboutUsText4{
+    float: right;
+    text-align: justify;
+    width: 65%;
+}
+.aboutUsFirstHeading5{
+ padding: 230px 0;
+}
+.aboutUsImage5{
+float:left;
+}
+.aboutUsText5{
+    float: right;
+    text-align: justify;
+    width: 65%;
+}
+.aboutUsFirstHeading6{
+ padding: 30px 0;
+}
+.aboutUsImage5{
+float:left;
+}
+.aboutUsText6{
+    float: right;
+    text-align: justify;
+    width: 65%;
+}
+.aboutUsFirstHeading7{
+ padding: 30px 0;
+}
+.aboutUsImage7{
+float:left;
+}
+.aboutUsText7{
+    float: right;
+    text-align: justify;
+    width: 65%;
+}
+.aboutUsFirstHeading8{
+ padding: 230px 0;
+}
+.aboutUsImage8{
+float:left;
+}
+.aboutUsText8{
+    float: right;
+    text-align: justify;
+    width: 65%;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+/*FAQs page*/
+/*.content {
+		width: 60%;
+		margin: 50px auto;
+		padding: 20px;
+	}*/
+	.content h1 {
+		font-weight: 400;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	.content h2 {
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #333;
+		margin: 0 0 20px;
+	}
+	.content p {
+		font-size: 1em;
+		font-weight: 300;
+		line-height: 1.5em;
+		margin: 0 0 20px;
+	}
+	.content p:last-child {
+		margin: 0;
+	}
+	.content a.button {
+		display: inline-block;
+		padding: 10px 20px;
+		background: #ff0;
+		color: #000;
+		text-decoration: none;
+	}
+	.content a.button:hover {
+		background: #000;
+		color: #ff0;
+	}
+	.content.title {
+		position: relative;
+		background: none;
+		border: 2px dashed #333;
+	}
+	.content.title h1 span.demo {
+		display: inline-block;
+		font-size: .5em;
+		padding: 5px 10px;
+		background: #000;
+		color: #fff;
+		vertical-align: top;
+		margin: 7px 0 0;
+	}
+	.content.title .back-to-article {
+		position: absolute;
+		bottom: -20px;
+		left: 20px;
+	}
+	.content.title .back-to-article a {
+		padding: 10px 20px;
+		background: #f60;
+		color: #fff;
+		text-decoration: none;
+	}
+	.content.title .back-to-article a:hover {
+		background: #f90;
+	}
+	.content.title .back-to-article a i {
+		margin-left: 5px;
+	}
+	/*.content.white {
+		background: #fff;
+		box-shadow: 0 0 10px #999;
+	}*/
+	.content.black {
+		background: #000;
+	}
+	.content.black p {
+		color: #999;
+	}
+	.content.black p a {
+		color: #08c;
+	}
+
+	.accordion-container {
+		width: 100%;
+		margin: 0 0 20px;
+		clear: both;
+	}
+	.accordion-toggle {
+    background: none repeat scroll 0 0 #999;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 10px;
+    position: relative;
+	}
+	.accordion-toggle.open {
+		background: #333;
+		color: #fff;
+	}
+	.accordion-toggle:hover {
+		background: #666;
+	}
+	.accordion-toggle span.toggle-icon {
+    font-size: 1.5em;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+	}
+	.accordion-content {
+		display: none;
+		padding: 20px;
+		overflow: auto;
+	}
+	.accordion-content img {
+		display: block;
+		float: left;
+		margin: 0 15px 10px 0;
+		max-width: 100%;
+		height: auto;
+	}
+	.rupeeLogo{
+    height: 78px;
+    width: 30%;
+	}
+
+	/* media query for mobile */
+	@media (max-width: 767px) {
+		.content {
+			width: auto;
+		}
+		.accordion-content {
+			padding: 10px 0;
+			overflow: inherit;
+		}
+	}
+
+
+    /*for login page*/
+
+.login {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.custom_form_group{
+    margin-bottom: 30px !important;
+}
+
+
+.custom_row{
+    margin-top: 20px !important;
+}
+@media(max-width: 767px)
+    {
+     width: auto;
+    }
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	margin-top:30px;
+	text-align:center;
+}
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.rupeeLogo img {
+	margin-top:8px;
+	max-width:200px;
+}
+.padr10 {
+	padding-right:10px;
+}
+.nav {
+	margin-top: 4px !important;
+}
+.margin10t {
+	margin-top:10px;
+}
+.margin25t {
+	padding-top:25px;
+}
+.margin25b {
+	padding-top:25px;
+}
+#sf-prev {
+	background-color:#AAAAAA !important;
+}
+.loader-small {
+	background-image: url("../images/loading-small.gif");
+	background-repeat:no-repeat;
+	background-position:center top;
+	float:right;
+	height:32px;
+	width:32px;
+}
